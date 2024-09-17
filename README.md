@@ -1,13 +1,21 @@
 # Trajectory Estimation and Visualization
 
 
-## Overview
-This project uses sensor data to estimate and visualize the trajectory of a moving object. The following sensors are used:
-- IMU (Inertial Measurement Unit)
-- GNSS (Global Navigation Satellite System)
-- LIDAR (Light Detection and Ranging)
+## Project Overview
 
+This project focuses on estimating and visualizing the trajectory of a moving object using data from multiple sensors. The sensors involved are:
 
+- **IMU** (Inertial Measurement Unit)
+- **GNSS** (Global Navigation Satellite System)
+- **LIDAR** (Light Detection and Ranging)
+
+The goal is to implement an Error-State Extended Kalman Filter (ES-EKF) to combine the measurements from different sensors and produce an accurate estimate of the object's position and trajectory. The project consists of several steps:
+
+1. **Kalman Filter Implementation:** Complete the prediction and correction steps of the ES-EKF using IMU data to propagate the state and GPS and LIDAR position updates to correct the estimate.
+
+2. **Handling Sensor Calibration Errors:** Examine the impact of sensor miscalibration by adjusting the filter's noise variances to compensate for errors caused by incorrect sensor transformations.
+
+3. **Handling Sensor Dropout:** Explore how the absence of GPS and LIDAR measurements affects position estimation and how uncertainty evolves when external corrections are unavailable.
 
 
 ## Data
