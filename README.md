@@ -33,7 +33,7 @@ This project requires the following Python packages:
 
 The results are visualized in a 3D plot showing the estimated trajectory and the ground truth trajectory. The plot uses Matplotlib's 3D plotting capabilities.
 
-![Ground Truth vs Estimated Trajectory](data/Results.png)
+![Ground Truth vs Estimated Trajectory](data/Results.PNG)
 
 ## Contributing
 
